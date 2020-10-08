@@ -1,0 +1,33 @@
+@import url("https://fonts.google.com/specimen/Sansita+Swashed");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+#container {
+    background-image: url("../assets/backgrounds/h_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;    
+    text-align: center;
+    padding-top: 230px;
+}
+.pizza {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #6c707c;
+}
+.buttons {
+    padding-top: 50px;
+}
+.buttons button {
+    border-radius: 40px;
+    color: black;
+}
+
+.menu-btn {
+    border-radius: 20px;
+    margin-top: 20px;
+    color: #000;
+    background-color: chocolate;
+}
