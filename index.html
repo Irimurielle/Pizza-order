@@ -13,7 +13,7 @@
         <div class="container-fluid" id="container">
             <div class="welcome">
                 <h1 class="pizza">Pizza App</h1>
-                <h3 class="order">Order your pizza here</h3>
+                <h3>Order your pizza here</h3>
                 <div class="buttons">
                     <a href="#menu">
                         <button class="btn menu-btn">Menu</button>
@@ -25,17 +25,57 @@
             <h1 class="text-center">Menu</h1>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <img src="" class="Small">
+                    <img src="images/small.jpeg" class="Small">
                     <p>Small: Rwf</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="" class="medium">
+                    <img src="images/medium.jpeg" class="medium">
                     <p>Medium: Rwf</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="" class="large">
+                    <img src="images/download(5).jpeg" class="large">
                     <p>Large: Rwf</p>
                 </div>
+            </div>
+        </div>
+        <div class="order">
+            <h1 class="text-center">Order</h1>
+            <div class="d-flex">
+                <form class="text-center">
+                    <label>Pick your preferred Size:</label>
+                    <select id="size" required>
+                        <option value="small-pizza">Small</option>
+                        <option value="medium-pizza">Medium</option>
+                        <option value="large-pizza">Large</option>
+                    </select>
+                    <label for="crust">Pick your favorite Crust:</label>
+                    <select id="crust" required>
+                        <option value="stuffed">Stuffed</option>
+                        <option value="Cheese">Cheese</option>
+                        <option value="gluten-free">Gluten free</option>
+                        <option value="frozen">Frozen</option>
+                    </select>
+                    <label>Select Your favourite Toppings</label>
+                    <select id="toppings" required>
+                        <option value="tomato">Tomato</option>
+                        <option value="onions">Onions</option>
+                        <option value="mushroom">Mushroom</option>
+                        <option value="olives">Olives</option>
+                        <option value="pineapple">Pineapple</option>
+                        <option value="beef">Beef Peperoni</option>
+                        <option value="chicken">Chicken</option>
+                        <option value="pepper">Pepper</option>
+                        <option value="bacon">Bacon</option>
+                        <option value="tuna">Tuna</option>
+                        <option value="ham">Ham</option>
+                        <option value="cheese">Cheese</option>
+                    </select>
+                    <label for="number">Number of Pizza's</label>
+                    <input type="number" id="number" placeholder="How many pizzas" required>
+                </form>
+                <a href="#brief">
+                    <button type="submit" class="btn checkout" id="checkout">Checkout</button>
+                </a>
             </div>
         </div>
     </body>
