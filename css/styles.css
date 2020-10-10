@@ -6,19 +6,15 @@
     font-family: cursive;
 }
 #container {
-    background-image: url("../assets/backgrounds/h_img.jpg");
+    background-image: url("../images/download (2).jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: black;    
-    text-align: center;
+    color: black;
     padding-top: 230px;
 }
-.pizza {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #6c707c;
-}
 .buttons {
-    padding-top: 50px;
+    padding-top: 160px;
+    padding-bottom: 50px;
 }
 .buttons button {
     border-radius: 40px;
@@ -32,6 +28,6 @@
     background-color: chocolate;
 }
 #menu {
-    margin-bottom: 4%;
-    padding-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
