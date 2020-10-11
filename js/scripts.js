@@ -24,4 +24,13 @@ $(document).ready(function() {
         }
         var userInput = new Order(size(), crust(), toppings(), number());
         var totalPrice =(userInput.newSize + userInput.newCrust + userInput.newToppings) * userInput.newNumber;
-        
+        $('.brief').slideDown();
+        $('.data').slideUp();
+        $('#list').slideDown();
+        $('.getdelivery').show();
+        $('#list').text(" ");
+        $("#list").append("<br>" + "Size :   " + userInput.newSize + "<br>" + "Crust :     "
+            + userInput.newCrust + "<br>" + "Toppings :     "
+            + userInput.newToppings + "<br>" + " Number of pizzas :    "
+            + userInput.newNumber + "<br>" + "Total Price :  "
+            + totalPrice + "<br><br>")
