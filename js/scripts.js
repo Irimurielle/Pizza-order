@@ -34,3 +34,12 @@ $(document).ready(function() {
             + userInput.newToppings + "<br>" + " Number of pizzas :    "
             + userInput.newNumber + "<br>" + "Total Price :  "
             + totalPrice + "<br><br>")
+    });
+    $(".getdelivery").click(function () {
+        $('.brief').slideUp();
+        $('#list').slideUp();
+        $('.brief').slideDown();
+        $('.getdelivery').hide();
+        $('.data').slideDown();
+    });
+});
