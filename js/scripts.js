@@ -23,3 +23,5 @@ $(document).ready(function() {
             this.newNumber = number;
         }
         var userInput = new Order(size(), crust(), toppings(), number());
+        var totalPrice =(userInput.newSize + userInput.newCrust + userInput.newToppings) * userInput.newNumber;
+        
