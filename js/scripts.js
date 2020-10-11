@@ -16,4 +16,10 @@ $(document).ready(function() {
             var pizzanumber = document.getElementById("number").value;
             return parseInt(pizzaNumber);
         }
-        
+        function Order(size, crust, toppings, number) {
+            this.newSize = size;
+            this.newCrust = crust;
+            this.newToppings = toppings;
+            this.newNumber = number;
+        }
+    
