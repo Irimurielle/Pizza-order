@@ -22,4 +22,4 @@ $(document).ready(function() {
             this.newToppings = toppings;
             this.newNumber = number;
         }
-    
+        var userInput = new Order(size(), crust(), toppings(), number());
