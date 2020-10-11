@@ -26,66 +26,74 @@
             <div class="row text-center">
                 <div class="col-md-4">
                     <img src="images/small.jpeg" class="Small">
-                    <p>Small: Rwf</p>
+                    <p>Small: 5000Rwf</p>
                 </div>
                 <div class="col-md-4">
                     <img src="images/download (3).jpeg" class="medium">
-                    <p>Medium: Rwf</p>
+                    <p>Medium: 8000Rwf</p>
                 </div>
                 <div class="col-md-4">
                     <img src="images/download(5).jpeg" class="large">
-                    <p>Large: Rwf</p>
+                    <p>Large: 10000Rwf</p>
                 </div>
             </div>
         </div>
         <div class="order">
             <h1 class="text-center">Order</h1>
-            <div class="form-group row">
-                <div class="col-md-8 text-center">
-                    <form class="col-md-6 text-center">
-                        <label>Pick your preferred Size:</label>
-                        <select id="size" required>
-                            <option value="small-pizza">Small</option>
-                            <option value="medium-pizza">Medium</option>
-                            <option value="large-pizza">Large</option>
-                        </select>
-                        <label for="crust">Pick your favorite Crust:</label>
-                        <select id="crust" required>
-                            <option value="stuffed">Stuffed</option>
-                            <option value="Cheese">Cheese</option>
-                            <option value="gluten-free">Gluten free</option>
-                            <option value="frozen">Frozen</option>
-                        </select>
-                        <label>Select Your favourite Toppings</label>
-                            <select id="toppings" required>
-                            <option value="tomato">Tomato</option>
-                            <option value="onions">Onions</option>
-                            <option value="mushroom">Mushroom</option>
-                            <option value="olives">Olives</option>
-                            <option value="pineapple">Pineapple</option>
-                            <option value="beef">Beef Peperoni</option>
-                            <option value="chicken">Chicken</option>
-                            <option value="pepper">Pepper</option>
-                            <option value="bacon">Bacon</option>
-                            <option value="tuna">Tuna</option>
-                            <option value="ham">Ham</option>
-                            <option value="cheese">Cheese</option>
-                        </select>
-                        <label for="number">Number of Pizza's</label>
-                        <input type="number" id="number" placeholder="How many pizzas" required>
-                    </form>
-                    <a href="#brief">
-                        <button type="submit" class="btn checkout" id="checkout">Checkout</button>
-                    </a>
-                </div>
-            </div>
+            <form class="col-md-6 text-center" id="myform">
+                <label>Pick your preferred Size:</label>
+                <select id="size" required>
+                    <option value="5000">Small</option>
+                    <option value="8000">Medium</option>
+                    <option value="10000">Large</option>
+                </select>
+                <label for="crust">Pick your favorite Crust:</label>
+                <select id="crust" required>
+                    <option value="2000">Stuffed @Rwf 2000</option>
+                    <option value="3000">Gluten free @Rwf 3000</option>
+                    <option value="2500">Cripsy @Rwf 2500</option>
+                </select>
+                <label>Select Your favourite Toppings</label>
+                <select id="toppings" required>
+                    <option value="1000">Tomato</option>
+                    <option value="1000">Onions</option>
+                    <option value="1000">Mushroom</option>
+                    <option value="1000">Olives</option>
+                    <option value="1000">Pineapple</option>
+                    <option value="1500">Chicken</option>
+                    <option value="800">Pepper</option>
+                    <option value="1200">Bacon</option>
+                    <option value="1200">Tuna</option>
+                    <option value="1200">Ham</option>
+                    <option value="1100">Cheese</option>
+                </select>
+                <label for="number">Number of Pizza's</label>
+                <input type="number" id="number" placeholder="How many pizzas" required>
+            </form>
+            <a href="#brief">
+                <button type="submit" class="btn checkout" id="checkout">Checkout</button>
+            </a>
         </div>
-        <div class="order-summary" id="sum-order">
+        <div class="summary-info" id="sum-info">
             <h1 class="text-center" id="brief">Summary</h1>
             <h2 class="text-center brief">Here is how your order looks:</h2>
-            <ol id="list" class="text-center Total">
-            </ol>
+            <ul id="list" class="text-center Total">
+            </ul>
+            <div class="data">
+                <div class="clientdata row">
+                    <form class="form-group col-sm-6 data">
+                        <input type="text" class="form-control data" placeholder="Name:">
+                        <input type="text" class="form-control data" placeholder="Phone number: ">
+                        <input type="text" class="form-control data" placeholder="Location: ">
+                        <button class="btn delivery">Make Delivery</button>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn getdelivery">Delivery</button>
+            </div>
         </div>
+
         <div class="contact">
             <h1 class="text-center">Contact</h1>
             <p class="text-center">We love hearing from you, let us know what you think of us.</p>
