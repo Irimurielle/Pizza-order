@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $('.brief').hide();
+    $('.data').hide();
     $("#checkout").click(function () {
         function size() {
             var pizzaSize = document.getElementById("size").value;
@@ -24,22 +26,21 @@ $(document).ready(function() {
         }
         var userInput = new Order(size(), crust(), toppings(), number());
         var totalPrice =(userInput.newSize + userInput.newCrust + userInput.newToppings) * userInput.newNumber;
-        $('.brief').slideDown();
+        $('.brief').slideDown(2000);
         $('.data').slideUp();
         $('#list').slideDown();
-        $('.getdelivery').show();
+        $('.getdelivery').show(1000);
         $('#list').text(" ");
-        $("#list").append("<br>" + "Size :   " + userInput.newSize + "<br>" + "Crust :     "
-            + userInput.newCrust + "<br>" + "Toppings :     "
-            + userInput.newToppings + "<br>" + " Number of pizzas :    "
-            + userInput.newNumber + "<br>" + "Total Price :  "
-            + totalPrice + "<br><br>")
+        $("#list").append("<br>" + "Size :   " + userInput.size + "<br>" + "Crust :     "
+            + userInput.crust + "<br>" + "Toppings :     "
+            + userInput.toppings + "<br>" + " Number of pizzas :    "
+            + userInput.number + "<br>" + "Total Price :  "
+            + totalPrice + "<br><br>");
     });
     $(".getdelivery").click(function () {
         $('.brief').slideUp();
         $('#list').slideUp();
-        $('.brief').slideDown();
-        $('.getdelivery').hide();
+        $('.getdelivery').hide(1000);
         $('.data').slideDown();
     });
 });
