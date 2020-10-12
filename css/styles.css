@@ -1,16 +1,9 @@
-@import url("https://fonts.google.com/specimen/Sansita+Swashed");
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: cursive;
-}
 #container {
-    background-image: url("../images/download (2).jpeg");
+    background-image: url("../images/download\ \(7\).jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: black;
-    padding-top: 230px;
+    color: burlywood;
+    padding-top: 180px;
 }
 .buttons {
     padding-top: 160px;
@@ -31,17 +24,17 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.brief {
-    display: none;
-}
-.data {
-    display: none;
-}
 .checkout {
     border-radius: 20px;
     margin-top: 20px;
     color: #ffffff;
     background-color: crimson;
+}
+.delivery {
+    border-radius: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: chartreuse;
 }
 .getdelivery {
     border-radius: 20px;
